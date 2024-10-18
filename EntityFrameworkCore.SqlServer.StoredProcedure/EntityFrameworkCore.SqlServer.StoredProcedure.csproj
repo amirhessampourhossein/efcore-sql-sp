@@ -7,6 +7,11 @@
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
     <Title>Sql Stored Procedures For EFCore</Title>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <PackageIcon>Frame 1.png</PackageIcon>
+    <PackageProjectUrl></PackageProjectUrl>
+    <Description>Useful extension methods and features for executing stored procedures using EFCore</Description>
+    <RepositoryUrl>https://github.com/amirhessampourhossein/efcore-sql-sp</RepositoryUrl>
+    <PackageTags>efcore;sp;sql</PackageTags>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -16,6 +21,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
     <NoWarn>1701;1702;1591</NoWarn>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\..\Frame 1.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.10" />
