@@ -12,6 +12,8 @@
     <Description>Useful extension methods and features for executing stored procedures using EFCore</Description>
     <RepositoryUrl>https://github.com/amirhessampourhossein/efcore-sql-sp</RepositoryUrl>
     <PackageTags>efcore;sp;sql</PackageTags>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
@@ -23,6 +25,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Include="..\..\..\..\Downloads\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\..\..\Downloads\README.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
     <None Include="..\..\..\Logo.png">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
