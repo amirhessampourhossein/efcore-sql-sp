@@ -6,12 +6,6 @@ namespace EntityFrameworkCore.SqlServer.StoredProcedure;
 
 public static class Extensions
 {
-    /// <summary>
-    /// Creates an instance of <see cref="StoredProcedureExecuter"/> to execute a stored procedure
-    /// </summary>
-    /// <param name="database">The <see cref="DatabaseFacade"/> of your <see cref="DbContext"/></param>
-    /// <param name="name">The name of stored procedure</param>
-    /// <returns>An instance of <see cref="StoredProcedureExecuter"/></returns>
     public static StoredProcedureExecuter StoredProcedure(
         this DatabaseFacade database,
         string name)
@@ -21,13 +15,6 @@ public static class Extensions
         return executer;
     }
 
-    /// <summary>
-    /// Creates an instance of <typeparamref name="TProcedure"/> type and performs execution
-    /// </summary>
-    /// <typeparam name="TProcedure">The stored procedure type passed as a generic argument</typeparam>
-    /// <param name="database">The <see cref="DatabaseFacade"/> of your <see cref="DbContext"/></param>
-    /// <param name="values">The values for stored procedure parameters</param>
-    /// <returns>The number of rows affected</returns>
     public static int ExecuteNonQueryStoredProcedure<TProcedure>(
         this DatabaseFacade database,
         params string?[] values)
